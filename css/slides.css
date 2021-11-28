@@ -556,7 +556,7 @@ s{
 /* For desktop */
 @media screen and (min-width: 1025px) {
   body {
-    font-size: 32px;
+    font-size: 28px;
   }
 	#main{
 		height: calc(100% - 60px);
