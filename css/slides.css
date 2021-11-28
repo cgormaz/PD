@@ -553,8 +553,8 @@ s{
 /***** RESPONSIVE ******/
 /*************************/
 
-/* If the screen size is 768pxpx wide or more */
-@media screen and (min-width: 768pxpx) {
+/* If the screen size is 768px wide or more */
+@media screen and (min-width: 768px) {
   body {
     font-size: 32px;
   }
@@ -583,8 +583,8 @@ s{
 	}
 }
 
-/* If the screen size is 767pxpx wide or less */
-@media screen and (max-width: 767pxpx) {
+/* If the screen size is 767px wide or less */
+@media screen and (max-width: 767px) {
   body {
     font-size: 40px;
   }
