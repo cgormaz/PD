@@ -55,15 +55,15 @@ function Splash(config){
 		var increment = (Math.TAU/count)+0.0001;
 		for(var angle=0; angle<Math.TAU; angle+=increment){
 			var a = angle-(Math.TAU/4);
-			var x = width/1.5 + Math.cos(a)*xRadius;
+			var x = width/2 + Math.cos(a)*xRadius;
 			var y = height/2 + Math.sin(a)*yRadius;
 			self.addPeep(x,y);
 		}
 	};
-	_createRing(400, 20);
-	_createRing(520, 25);
-	_createRing(640, 30);
-	_createRing(760, 35);
+	_createRing(500, 20);
+	_createRing(620, 25);
+	_createRing(740, 30);
+	_createRing(860, 35);
 
 	// Connect all within a radius
 	var _connectAllWithinRadius = function(radius){
