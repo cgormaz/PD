@@ -14,7 +14,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:385, y:466, 
+			id:"button", type:"Button", x:304, y:466, 
 			text_id:"outro_1_btn", size:"long",
 			message:"slideshow/next"
 		});
@@ -62,7 +62,7 @@ SLIDES.push({
 			text_id:"outro_2_btn", size:"long",
 			message:"slideshow/scratch"
 		});
-		_hide(o.button); _fadeIn(o.button, 2000);
+		_hide(o.button); _fadeIn(o.button, 300);
 		
 		// Button2
 		self.add({
@@ -70,7 +70,7 @@ SLIDES.push({
 			text_id:"outro_2_btn2", size:"long",
 			message:"slideshow/scratch"
 		});
-		_hide(o.button2); _fadeIn(o.button2, 2000);
+		_hide(o.button2); _fadeIn(o.button2, 500);
 
 	},
 	onend: function(self){
