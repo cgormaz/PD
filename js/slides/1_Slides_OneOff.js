@@ -15,7 +15,7 @@ SLIDES.push({
 		// Button
 		self.add({
 			id:"button", type:"Button", x:385, y:466, 
-			text_id:"outro_1_btn",
+			text_id:"outro_1_btn", size:"long",
 			message:"slideshow/next"
 		});
 
@@ -34,18 +34,18 @@ SLIDES.push({
 		// Text
 		self.add({
 			id:"text", type:"TextBox",
-			x:160, y:30, width:640, height:500, align:"center", size:22,
+			x:160, y:10, width:640, height:500, align:"center",
 			text_id:"outro_2"
 		});
 		_hide(o.text); _fadeIn(o.text, 100);
 
 		// Photo
-		self.add({
+		/*self.add({
 			id:"img", type:"ImageBox",
 			src: "assets/conclusion/truce.jpg",
 			x:228, y:90, width:500,
 		});
-		_hide(o.img); _fadeIn(o.img, 200);
+		_hide(o.img); _fadeIn(o.img, 200);*/
 
 		/*// Text 2
 		self.add({
@@ -59,15 +59,15 @@ SLIDES.push({
 		// Button
 		self.add({
 			id:"button", type:"Button", x:427, y:466, 
-			text_id:"outro_2_btn", size:"short",
+			text_id:"outro_2_btn", size:"long",
 			message:"slideshow/scratch"
 		});
 		_hide(o.button); _fadeIn(o.button, 2000);
 		
 		// Button2
 		self.add({
-			id:"button2", type:"Button", x:427, y:496, 
-			text_id:"outro_2_btn2", size:"short",
+			id:"button2", type:"Button", x:427, y:586, 
+			text_id:"outro_2_btn2", size:"long",
 			message:"slideshow/scratch"
 		});
 		_hide(o.button2); _fadeIn(o.button2, 2000);
