@@ -55,7 +55,7 @@ function Splash(config){
 		var increment = (Math.TAU/count)+0.0001;
 		for(var angle=0; angle<Math.TAU; angle+=increment){
 			var a = angle-(Math.TAU/4);
-			var x = width/2 + Math.cos(a)*xRadius;
+			var x = width/1.5 + Math.cos(a)*xRadius;
 			var y = height/2 + Math.sin(a)*yRadius;
 			self.addPeep(x,y);
 		}
