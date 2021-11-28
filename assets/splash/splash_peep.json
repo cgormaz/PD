@@ -10,11 +10,11 @@
 },
 "splash_peep0001":
 {
-	"frame": {"x":10,"y":422,"w":302,"h":402},
+	"frame": {"x":0,"y":422,"w":422,"h":402},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":302,"h":402},
-	"sourceSize": {"w":302,"h":402}
+	"spriteSourceSize": {"x":0,"y":0,"w":422,"h":402},
+	"sourceSize": {"w":422,"h":402}
 }},
 "meta": {
 	"app": "Adobe Animate",
