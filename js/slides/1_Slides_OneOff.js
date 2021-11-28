@@ -1,135 +1,136 @@
-// THE TRUST GAME - COOPERATE, YA NO?
 SLIDES.push({
-
 	id: "oneoff",
-
 	onstart: function(self){
 
-		Tournament.resetGlobalVariables();
+		// WORDS
+		self.add({
+			id:"text1", type:"TextBox",
+			x:3, y:6, width:800,
+			text_id:"oneoff_0"
+		});
+		self.add({
+			id:"text2", type:"TextBox",
+			x:176, y:65-10, width:760, size:30, color:"#4089DD",
+			text_id:"oneoff_1_a"
+		});
+		self.add({
+			id:"text3", type:"TextBox",
+			x:176, y:115-10, width:760,
+			text_id:"oneoff_1_a2"
+		});
+		self.add({
+			id:"text4", type:"TextBox",
+			x:176, y:192-10, width:760, size:30, color:"#efc701",
+			text_id:"oneoff_2_a"
+		});
+		self.add({
+			id:"text5", type:"TextBox",
+			x:176, y:242-10, width:760,
+			text_id:"oneoff_2_a2"
+		});
+		self.add({
+			id:"text6", type:"TextBox",
+			x:176, y:316-10, width:760, size:30, color:"#DD4040",
+			text_id:"oneoff_3_a"
+		});
+		self.add({
+			id:"text7", type:"TextBox",
+			x:176, y:366-10, width:760,
+			text_id:"oneoff_3_a2"
+		});
+		self.add({
+			id:"text8", type:"TextBox",
+			x:74, y:440, width:520, align:"right",
+			text_id:"oneoff_4"
+		});
 
-		// Iterated Simulation
-		//self.add({id:"iterated", type:"Iterated", x:130, y:133});
-
-		// Words on top & bottom
+		// IMAGE
 		self.add({
-			id:"topWords", type:"TextBox", text_id:"oneoff_0_top",
-			x:130, y:10, width:700, height:100, align:"center"
-		});
-		self.add({
-			id:"btmWords", type:"TextBox", text_id:"oneoff_0_btm",
-			x:130, y:397, width:700, height:100, align:"center"
+			id:"img", type:"ImageBox",
+			src: "assets/conclusion/summary.png",
+			x:10, y:60, width:140, height:350
 		});
 
-		// Labels
+		// Button
 		self.add({
-			id:"labelYou", type:"TextBox",
-			x:211, y:201, width:50, height:50,
-			align:"center", color:"#aaa", size:17,
-			text_id:"label_you"
-		});
-		self.add({
-			id:"labelThem", type:"TextBox",
-			x:702, y:189, width:50, height:50,
-			align:"center", color:"#aaa", size:17,
-			text_id:"label_them"
-		});
-
-		// Buttons
-		self.add({
-			id:"btnCheat", type:"Button", x:275, y:463, text_id:"label_cheat", uppercase:true,
-			onclick:function(){
-				_.answer = "CHEAT";
-				publish("slideshow/next");
-			}
-		});
-		self.add({
-			id:"btnCooperate", type:"Button", x:495, y:460, text_id:"label_cooperate", uppercase:true,
-			onclick:function(){
-				_.answer = "COOPERATE";
-				publish("slideshow/next");
-			}
+			id:"button", type:"Button", x:615, y:481, 
+			text_id:"oneoff_btn", size:"long",
+			message:"slideshow/scratch"
 		});
 
 	},
 	onend: function(self){
-		//self.remove("labelYou");
-		//self.remove("labelThem");
+		self.clear();
 	}
+});
 
-},{
-
+SLIDES.push({
 	onstart: function(self){
 
-		var o = self.objects;
+		// Splash in background
+		self.add({ id:"splash", type:"Splash", blush:true });
 
-		// Payoff
-		o.iterated.oneoffHighlight1(_.answer);
-
-		// Text
-		var t = o.topWords;
-		var b = o.btmWords;
-		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_1_cooperated")+"<br>"+Words.get("oneoff_1_top"));
-		}else{
-			t.setText(Words.get("oneoff_1_cheated")+"<br>"+Words.get("oneoff_1_top"));
-		}
-		b.setTextID("oneoff_1_btm");
-
-		// Hide & fade
-		_hide(o.topWords); _fadeIn(o.topWords, 150+10);
-		_hide(o.btmWords); _fadeIn(o.btmWords, 150+600);
-		_hide(o.btnCheat); _fadeIn(o.btnCheat, 150+1200);
-		_hide(o.btnCooperate); _fadeIn(o.btnCooperate, 150+1200);
-
-	},
-	onend: function(self){
-		self.remove("btmWords");
-	}
-
-},{
-
-	onstart: function(self){
-
-		var o = self.objects;
-
-		// Payoff
-		o.iterated.oneoffHighlight2(_.answer);
-
-		// Text
-		var t = o.topWords;
-		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_2_cooperated")+"<br>"+Words.get("oneoff_2_top"));
-		}else{
-			t.setText(Words.get("oneoff_2_cheated")+"<br>"+Words.get("oneoff_2_top"));
-		}
+		// Circular Wordbox
 		self.add({
-			id:"btmWords", type:"TextBox", text_id:"oneoff_2_btm",
-			x:130, y:392, width:700, height:100, align:"center"
+			id:"text", type:"TextBox",
+			x:160, y:10, width:640, height:500, align:"center",
+			text_id:"outro_1"
 		});
 
-		// Replace button
-		self.remove("btnCheat");
-		self.remove("btnCooperate");
+		// Button
 		self.add({
-			id:"btnNext", type:"Button", x:304, y:481, size:"long",
-			text_id:"oneoff_button_next", 
+			id:"button", type:"Button", x:385, y:466, 
+			text_id:"outro_1_btn",
 			message:"slideshow/next"
 		});
 
-		// Hide & fade
-		_hide(o.topWords); _fadeIn(o.topWords, 150+10);
-		_hide(o.btmWords); _fadeIn(o.btmWords, 150+600);
-		_hide(o.btnNext); _fadeIn(o.btnNext, 150+1200);
-
 	},
-
 	onend: function(self){
-		self.objects.iterated.dehighlightPayoff();
-		self.remove("topWords");
-		self.remove("btmWords");
-		self.remove("btnNext");
-		_.clear();
+		self.remove("text");
+		self.remove("button");
 	}
-
 });
 
+SLIDES.push({
+	onstart: function(self){
+
+		var o = self.objects;
+
+		// Text
+		self.add({
+			id:"text", type:"TextBox",
+			x:160, y:30, width:640, height:500, align:"center", size:22,
+			text_id:"outro_2"
+		});
+		_hide(o.text); _fadeIn(o.text, 100);
+
+		// Photo
+		self.add({
+			id:"img", type:"ImageBox",
+			src: "assets/conclusion/truce.jpg",
+			x:228, y:90, width:500,
+		});
+		_hide(o.img); _fadeIn(o.img, 200);
+
+		// Text 2
+		self.add({
+			id:"text2", type:"TextBox",
+			x:228, y:402, width:500,
+			align:"center", color:"#aaa", size:14,
+			text_id:"outro_2_credits"
+		});
+		_hide(o.text2); _fadeIn(o.text2, 200);
+
+		// Button
+		self.add({
+			id:"button", type:"Button", x:427, y:466, 
+			text_id:"outro_2_btn", size:"short",
+			message:"slideshow/scratch"
+		});
+		_hide(o.button); _fadeIn(o.button, 2000);
+
+	},
+	onend: function(self){
+		self.clear();
+	}
+});
