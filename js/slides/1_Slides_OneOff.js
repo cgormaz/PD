@@ -47,14 +47,14 @@ SLIDES.push({
 		});
 		_hide(o.img); _fadeIn(o.img, 200);
 
-		// Text 2
+		/*// Text 2
 		self.add({
 			id:"text2", type:"TextBox",
 			x:228, y:402, width:500,
 			align:"center", color:"#aaa", size:14,
 			text_id:"outro_2_credits"
 		});
-		_hide(o.text2); _fadeIn(o.text2, 200);
+		_hide(o.text2); _fadeIn(o.text2, 200);*/
 
 		// Button
 		self.add({
@@ -63,6 +63,14 @@ SLIDES.push({
 			message:"slideshow/scratch"
 		});
 		_hide(o.button); _fadeIn(o.button, 2000);
+		
+		// Button2
+		self.add({
+			id:"button2", type:"Button", x:427, y:496, 
+			text_id:"outro_2_btn2", size:"short",
+			message:"slideshow/scratch"
+		});
+		_hide(o.button2); _fadeIn(o.button2, 2000);
 
 	},
 	onend: function(self){
