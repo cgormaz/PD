@@ -32,7 +32,7 @@ Loader.addToManifest(Loader.manifest,{
 	cssAsset12: "assets/tournament/score_small.png",
 
 	// Music!
-	bg_music: "assets/sounds/bg_music.mp3",
+	bg_music: "",
 
 	// IMAGE BOXES
 	image1: "assets/evolution/evolution_intro.png",
