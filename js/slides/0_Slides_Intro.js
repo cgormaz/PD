@@ -61,13 +61,13 @@ SLIDES.push({
 		self.add({
 			id:"subtitle", type:"TextBox",
 			x:267, y:344, width:420,
-			align:"center", color:"#aaa", size:15,
+			align:"center", color:"#aaa", size:30,
 			text_id:"subtitle"
 		});
 
 		// Button
 		self.add({
-			id:"loading_button", type:"Button", x:382, y:410,
+			id:"loading_button", type:"Button", x:382, y:440,
 			text_id:"loading",
 			active:false
 		});
@@ -112,7 +112,7 @@ SLIDES.push({
 		// Circular Wordbox
 		self.add({
 			id:"intro_text", type:"TextBox",
-			x:130, y:10, width:700, height:500, align:"center",
+			x:130, y:-190, width:700, height:750, align:"center",
 			text_id:"intro"
 		});
 
