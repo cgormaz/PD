@@ -51,7 +51,7 @@ function Splash(config){
 
 	// Create RINGS
 	var _createRing = function(xRadius, count){
-		yRadius = xRadius*(400/170);
+		yRadius = xRadius*(300/170);
 		var increment = (Math.TAU/count)+0.0001;
 		for(var angle=0; angle<Math.TAU; angle+=increment){
 			var a = angle-(Math.TAU/4);
