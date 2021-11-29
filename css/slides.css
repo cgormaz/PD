@@ -544,6 +544,9 @@ s{
 	.titulo {
 		margin-top: -100px;
 	}
+	img.logo {
+		margin-top: -150px;
+	}
 	#main{
 		height: calc(100% - 60px);
 	}
