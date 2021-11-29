@@ -69,6 +69,7 @@ SLIDES.push({
 		self.add({
 			id:"loading_button", type:"Button", x:382, y:440,
 			text_id:"loading",
+			class:"firstBtn",
 			active:false
 		});
 		var _loadingWords = function(ratio){

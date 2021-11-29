@@ -14,7 +14,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:270, y:466, 
+			id:"button", type:"Button", x:270, y:440, 
 			text_id:"outro_1_btn", size:"long",
 			message:"slideshow/next"
 		});
@@ -49,7 +49,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:270, y:466, 
+			id:"button", type:"Button", x:270, y:390, 
 			text_id:"outro_2_btn", size:"long",
 			message:"slideshow/scratch"
 		});
@@ -57,7 +57,7 @@ SLIDES.push({
 		
 		// Button2
 		self.add({
-			id:"button2", type:"Button", x:270, y:550, 
+			id:"button2", type:"Button", x:270, y:480, 
 			text_id:"outro_2_btn2", size:"long",
 			message:"slideshow/scratch"
 		});

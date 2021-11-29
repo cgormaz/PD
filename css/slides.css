@@ -227,7 +227,10 @@ s{
 	transform: scale(1.02, 1.02);
 }
 .button[hover=yes] #background{
-	background-position: 0px -158px !important;
+	background-position: 0px -126px;
+}
+.button[hover=yes][size=long] #background {
+    background-position: 0px -158px !important;
 }
 .button[deactivated=yes] #background{
 	background-position: 0px -250px !important;
@@ -266,6 +269,7 @@ s{
 .button[size=long] #text{
 	width:400px;
 	top: 11px;
+	font-size: 32px;
 }
 .button[size=long] #hitbox{
 	width:420px;
