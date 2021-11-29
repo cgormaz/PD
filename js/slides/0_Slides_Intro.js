@@ -118,7 +118,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"intro_button", type:"Button", x:304, y:466, size:"long",
+			id:"intro_button", type:"Button", x:270, y:360, size:"long",
 			text_id:"intro_button", 
 			message:"slideshow/scratch"
 		});
