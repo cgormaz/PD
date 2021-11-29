@@ -281,7 +281,7 @@ s{
 /*************************/
 /****** SANDBOX UI *******/
 /*************************/
-
+/*
 #sandbox_tabs{
 	position: absolute;
 	left: 460px; top:-10px;
@@ -289,12 +289,13 @@ s{
 	width:500px; height:470px;
 	background-size: auto 100%;
 
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
+	-webkit-user-select: none;
+	-moz-user-select: none;     
+	-ms-user-select: none;     
 	user-select: none;
 	cursor: default;
 }
+
 #sandbox_tabs > div{
 	position: absolute;
 }
@@ -381,7 +382,7 @@ s{
     width: 150px;
     top: 8px;
     left: 50px;
-}
+}*/
 
 /*************************/
 /******* SCRATCHER *******/
@@ -399,36 +400,10 @@ s{
 }
 
 /*************************/
-/******* SCOREBOARD *******/
-/*************************/
-
-#scoreboard{
-	position: absolute;
-	width:200px; height:100px;
-	background: url(../assets/iterated/iterated_scoreboard.png);
-	background-size: 100% 100%;
-}
-#scoreboard > div{
-	position: absolute;
-	width: 60px; height: 60px;
-	text-align: center;
-	font-size: 50px;
-	color: #666666;
-}
-#scoreboard > div:nth-child(1){
-	left: 20px;
-    top: 21px;
-}
-#scoreboard > div:nth-child(2){
-	right: 15px;
-    top: 21px;
-}
-
-/*************************/
 /******* CHARACTERS *******/
 /*************************/
 
-.character{
+/*.character{
 	position: absolute;
 	height: 114px;
 }
@@ -463,7 +438,7 @@ s{
 .prober{ color:#f6b24c; }
 .tf2t{ color:#88A8CE; }
 .pavlov{ color:#86C448; }
-.random{ color:#FF5E5E; }
+.random{ color:#FF5E5E; }*/
 
 .icon{
 	width:25px; height:25px;
@@ -479,20 +454,20 @@ s{
 	position: relative;
     top: -3px;
 }
-.tft .icon{ 		background-position: 0 0; }
+/*.tft .icon{ 		background-position: 0 0; }
 .all_d .icon{ 	background-position: -25px 0; }
 .all_c .icon{ 	background-position: -50px 0; }
 .grudge .icon{ 	background-position: -75px 0; }
 .prober .icon{ 	background-position: -100px 0; }
 .tf2t .icon{ 	background-position: -125px 0; }
 .pavlov .icon{ 	background-position: -150px 0; }
-.random .icon{ 	background-position: -175px 0; }
+.random .icon{ 	background-position: -175px 0; }*/
 
 /*************************/
 /******* MISC STUFF *******/
 /*************************/
 
-.score_small{
+/*.score_small{
 	width:40px; height:40px;
 	background: url(../assets/tournament/score_small.png);
 	background-size: auto 100%;
@@ -501,7 +476,7 @@ s{
 .score_small[payoff=R]{ background-position: 0 0; }
 .score_small[payoff=T]{ background-position: -40px 0; }
 .score_small[payoff=S]{ background-position: -80px 0; }
-.score_small[payoff=P]{ background-position: -120px 0; }
+.score_small[payoff=P]{ background-position: -120px 0; }*/
 
 /*************************/
 /***** SLIDE SELECT ******/
@@ -560,7 +535,7 @@ s{
 /* For desktop */
 @media screen and (min-width: 1025px) {
   body {
-    font-size: 28px;
+    font-size: 24px;
   }
 	#main{
 		height: calc(100% - 60px);
@@ -589,6 +564,6 @@ s{
 		margin-top: 64px;
 	}
 	.object.textbox {
-		margin-top: 100px;
+		margin-top: 170px;
 	}
 }
