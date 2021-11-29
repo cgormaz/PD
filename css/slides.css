@@ -538,9 +538,12 @@ s{
 
 /* For desktop */
 @media screen and (min-width: 1025px) {
-  body {
-    font-size: 24px;
-  }
+	body {
+		font-size: 24px;
+	}
+	.titulo {
+		margin-top: -100px;
+	}
 	#main{
 		height: calc(100% - 60px);
 	}

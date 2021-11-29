@@ -44,7 +44,7 @@ Words.convert = function(filepath){
 
 		// error handler (optional)
 		function(data, xhr) {
-			alert("AHHHHHHHHHHHH, PROBLEM LOADING WORDS");
+			alert("Oh no, por favor vuelve a cargar el sitio.");
 			console.error(data, xhr.status)
 		}
 

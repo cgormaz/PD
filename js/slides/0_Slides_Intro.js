@@ -38,6 +38,8 @@ Loader.addToManifest(Loader.manifest,{
 	image1: "assets/evolution/evolution_intro.png",
 	image2: "assets/conclusion/summary.png",
 	image3: "assets/conclusion/truce.jpg",
+	image4: "assets/experimento/wip.gif",
+	image5: "assets/experimento/hermanos.png",
 
 });
 
