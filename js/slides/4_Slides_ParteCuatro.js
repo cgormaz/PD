@@ -73,7 +73,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:270, y:390, 
+			id:"button", type:"Button", x:270, y:480, 
 			text_id:"outro_9_btn", size:"long",
 			message:"slideshow/scratch"
 		});

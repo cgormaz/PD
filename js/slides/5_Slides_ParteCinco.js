@@ -77,37 +77,13 @@ SLIDES.push({
 SLIDES.push({
 	onstart: function(self){
 
-		// Circular Wordbox
-		self.add({
-			id:"text", type:"TextBox",
-			x:160, y:-250, width:640, height:500, align:"center",
-			text_id:"outro_13"
-		});
-
-		// Button
-		self.add({
-			id:"button", type:"Button", x:270, y:480, 
-			text_id:"outro_13_btn", size:"long",
-			message:"slideshow/next"
-		});
-
-	},
-	onend: function(self){
-		self.remove("text");
-		self.remove("button");
-	}
-});
-
-SLIDES.push({
-	onstart: function(self){
-
 		var o = self.objects;
 
 		// Text
 		self.add({
 			id:"text", type:"TextBox",
 			x:160, y:-250, width:640, height:500, align:"center",
-			text_id:"outro_14"
+			text_id:"outro_13"
 		});
 		_hide(o.text); _fadeIn(o.text, 100);
 
@@ -122,7 +98,7 @@ SLIDES.push({
 		// Button
 		self.add({
 			id:"button", type:"Button", x:270, y:390, 
-			text_id:"outro_14_btn", size:"long",
+			text_id:"outro_13_btn", size:"long",
 			message:"slideshow/scratch"
 		});
 		_hide(o.button); _fadeIn(o.button, 300);

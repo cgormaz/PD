@@ -503,9 +503,6 @@ s{
 #select .dot[selected]{
 	background: #fff;
 }
-#select .barra{
-	width: 70%;
-}
 
 img.hidemobile {
 	display:initial;
@@ -567,7 +564,7 @@ img.hidedesktop {
 		width: 30px;
 		height: 30px;
 	}
-	#select .barra{
+	#select {
 		width: 100%;
 	}
 	#select .dot{
