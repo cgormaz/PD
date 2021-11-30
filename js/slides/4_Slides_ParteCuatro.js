@@ -29,9 +29,6 @@ SLIDES.push({
 SLIDES.push({
 	onstart: function(self){
 
-		// Splash in background
-		self.add({ id:"splash", type:"Splash", blush:true });
-
 		// Circular Wordbox
 		self.add({
 			id:"text", type:"TextBox",

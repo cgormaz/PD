@@ -487,7 +487,7 @@ s{
 /*************************/
 
 #select{
-	width:100%;
+	width:80%;
 	text-align: center;
     padding-top: 15px;
 }
@@ -507,7 +507,12 @@ s{
 	width: 70%;
 }
 
-
+.hidemobile {
+	display:initial;
+}
+.hidedesktop {
+	display:hide;
+}
 
 /*************************/
 /***** CREDITS ******/
@@ -575,5 +580,11 @@ s{
 	}
 	.object.textbox {
 		margin-top: 200px;
+	}
+	.hidemobile {
+		display:none;
+	}
+	.hidedesktop {
+		display:initial;
 	}
 }
