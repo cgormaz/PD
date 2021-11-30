@@ -51,7 +51,7 @@ SLIDES.push({
 		var o = self.objects;
 
 		// Splash in background
-		self.add({ id:"splash", type:"Splash" });
+		self.add({ id:"splash", type:"Splash", blush:true });
 
 		// TITLE TEXT
 		self.add({
