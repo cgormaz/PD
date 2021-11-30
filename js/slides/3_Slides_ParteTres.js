@@ -14,7 +14,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:270, y:440, 
+			id:"button", type:"Button", x:270, y:480, 
 			text_id:"outro_5_btn", size:"long",
 			message:"slideshow/next"
 		});
