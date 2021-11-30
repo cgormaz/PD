@@ -50,29 +50,6 @@ SLIDES.push({
 	}
 });
 
-SLIDES.push({
-	onstart: function(self){
-
-		// Circular Wordbox
-		self.add({
-			id:"text", type:"TextBox",
-			x:160, y:-250, width:640, height:500, align:"center",
-			text_id:"outro_12"
-		});
-
-		// Button
-		self.add({
-			id:"button", type:"Button", x:270, y:480, 
-			text_id:"outro_12_btn", size:"long",
-			message:"slideshow/next"
-		});
-
-	},
-	onend: function(self){
-		self.remove("text");
-		self.remove("button");
-	}
-});
 
 SLIDES.push({
 	onstart: function(self){
