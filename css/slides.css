@@ -507,11 +507,11 @@ s{
 	width: 70%;
 }
 
-.hidemobile {
+img.hidemobile {
 	display:initial;
 }
-.hidedesktop {
-	display:hide;
+img.hidedesktop {
+	display:none;
 }
 
 /*************************/
@@ -581,10 +581,10 @@ s{
 	.object.textbox {
 		margin-top: 200px;
 	}
-	.hidemobile {
+	img.hidemobile {
 		display:none;
 	}
-	.hidedesktop {
+	img.hidedesktop {
 		display:initial;
 	}
 }
