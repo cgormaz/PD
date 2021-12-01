@@ -39,7 +39,6 @@ Loader.addToManifest(Loader.manifest,{
 	image2: "assets/conclusion/summary.png",
 	image3: "assets/conclusion/truce.jpg",
 	image4: "assets/experimento/wip.gif",
-	image5: "assets/experimento/hermanos.png",
 	image5: "assets/experimento/01.gif",
 
 });
