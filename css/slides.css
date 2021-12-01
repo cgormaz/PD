@@ -541,7 +541,7 @@ img.hidedesktop {
 /*************************/
 
 /* For desktop */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 701px) {
 	body {
 		font-size: 24px;
 	}
