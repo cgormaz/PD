@@ -40,6 +40,13 @@ Loader.addToManifest(Loader.manifest,{
 	image3: "assets/conclusion/truce.jpg",
 	image4: "assets/experimento/wip.gif",
 	image5: "assets/experimento/01.gif",
+	image6: "assets/experimento/02.gif",
+	image7: "assets/experimento/03.gif",
+	image8: "assets/experimento/04.gif",
+	image9: "assets/experimento/05.gif",
+	image10: "assets/experimento/06.gif",
+	image11: "assets/experimento/07.gif",
+	image12: "assets/experimento/08.gif",
 
 });
 
