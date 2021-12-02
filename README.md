@@ -1,8 +1,8 @@
-!["Proyecto Pensiones"](https://cgormaz.github.io/PD/social/thumbnail.png)
+!["Rompechanchitos"](https://cgormaz.github.io/PD/social/thumbnail.png)
 
-#	JUEGALO AQUÍ: [https://cgormaz.github.io/PD/](https://cgormaz.github.io/PD/)
+#	JUEGALO AQUÍ: [rompechanchitos.com](http://rompechanchitos.com)
 
-*Proyecto Pensiones* fue desarrollado usando como base el código fuente de *The Evolution of Trust* de Nicky Case, por lo tanto usa muchos de los recursos que el juego original utiliza:
+*Rompechanchitos* fue desarrollado usando como base el código fuente de *The Evolution of Trust* de Nicky Case, por lo tanto usa muchos de los recursos que el juego original utiliza:
 
 **Código Fuente:**
 
@@ -25,8 +25,3 @@
 * [Pegasus](https://github.com/typicode/pegasus)
 
 **Tipografía:** [Futura Handwritten](http://www.dafont.com/futurahandwritten.font) por Bill Snyder
-
-
-#	"LICENCIA"
-
-[Creative Commons Zero](https://github.com/ncase/trust/blob/gh-pages/LICENSE): it's a public domain dedication, so basically, do whatever you want! Attribution is super appreciated, but I'm not gonna send legal goons after you or anything.
