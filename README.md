@@ -1,6 +1,6 @@
-!["Rompechanchitos"](https://cgormaz.github.io/PD/social/thumbnail.png)
+!["Rompechanchitos"](https://rompechanchitos.com/social/thumbnail.png)
 
-#	JUEGALO AQUÍ: [rompechanchitos.com](http://rompechanchitos.com)
+#	JUEGALO AQUÍ: [rompechanchitos.com](https://rompechanchitos.com)
 
 *Rompechanchitos* fue desarrollado usando como base el código fuente de *The Evolution of Trust* de Nicky Case, por lo tanto usa muchos de los recursos que el juego original utiliza:
 
