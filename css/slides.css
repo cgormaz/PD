@@ -235,7 +235,7 @@ s{
     background-position: 0px -158px !important;
 }
 .button[deactivated=yes] #background{
-	background-position: 0px -250px !important;
+	background-position: 0px -307px !important;
 }
 .button[deactivated=yes] #text{
 	color: #CCCCCC;
@@ -283,112 +283,6 @@ s{
 .object.button {
     margin-top: 300px;
 }
-
-/*************************/
-/****** SANDBOX UI *******/
-/*************************/
-/*
-#sandbox_tabs{
-	position: absolute;
-	left: 460px; top:-10px;
-	background: url(../assets/ui/sandbox_tabs.png);
-	width:500px; height:470px;
-	background-size: auto 100%;
-
-	-webkit-user-select: none;
-	-moz-user-select: none;     
-	-ms-user-select: none;     
-	user-select: none;
-	cursor: default;
-}
-
-#sandbox_tabs > div{
-	position: absolute;
-}
-#sandbox_tabs .hitbox{
-	cursor: pointer;
-	font-size: 25px;
-	top: 22px;
-}
-#sandbox_tabs .sandbox_page{
-	width: 433px;
-	height: 385px;
-	left: 33px;
-	top: 80px;
-}
-.incdec{
-	width: 0; height: 0;
-	position: absolute;
-}
-.incdec > div{
-	position: absolute;
-}
-.incdec > .incdec_num{
-	width:50px; height:50px;
-	font-size: 25px;
-	text-align: center;
-    top: -16px;
-    left: -25px;
-    cursor: default;
-}
-.incdec > .incdec_control{
-	left:-10px;
-	width:20px; height:20px;
-	background: url(../assets/ui/sandbox_incdec.png);
-	background-size: auto 100%;
-	cursor: pointer;
-}
-.incdec > .incdec_control[arrow=up]{ top:-35px; background-position:0px 0px; }
-.incdec > .incdec_control[arrow=up]:hover{ background-position:-20px 0px; }
-.incdec > .incdec_control[arrow=down]{ bottom:-35px; background-position:-40px 0px; }
-.incdec > .incdec_control[arrow=down]:hover{ background-position:-60px 0px; }
-
-.slider{
-	position: absolute;
-	height: 40px;
-}
-.slider > div{
-	position: absolute;
-}
-.slider > .slider_bg{
-	top:0;
-	width:100%; height:30px;
-	background: url(../assets/ui/slider_bg.png);
-	background-size: auto 100%;
-}
-.slider > .slider_knob{
-	top:0;
-	width:30px; height:30px;
-	background: url(../assets/ui/slider_knob.png);
-	background-size: 100% 100%;
-	cursor: -webkit-grab;
-	cursor: -moz-grab;
-	cursor: grab;
-}
-.slider > .slider_knob:active{
-	cursor: -webkit-grabbing;
-	cursor: -moz-grabbing;
-	cursor: grabbing;
-}
-
-.sandbox_pop{
-	position: absolute;
-}
-.sandbox_pop>div{
-	position: absolute;
-}
-.sandbox_pop_icon{
-	width: 40px;
-	height: 40px;
-	background: url(../assets/ui/sandbox_hats.png);
-	background-size: auto 100%;
-}
-.sandbox_pop_label{
-	font-size: 18px;
-    width: 150px;
-    top: 8px;
-    left: 50px;
-}*/
 
 /*************************/
 /******* SCRATCHER *******/
