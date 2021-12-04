@@ -8,19 +8,19 @@ SLIDES.push({
 		Tournament.resetGlobalVariables();
 
 		// Iterated Simulation
-		//self.add({id:"iterated", type:"Iterated", x:130, y:133});
+		self.add({id:"iterated", type:"Iterated", x:130, y:133});
 
 		// Words on top & bottom
 		self.add({
-			id:"topWords", type:"TextBox", text_id:"outro_1",
+			id:"topWords", type:"TextBox", text_id:"oneoff_0_top",
 			x:130, y:10, width:700, height:100, align:"center"
 		});
 		self.add({
-			id:"btmWords", type:"TextBox", text_id:"outro_1",
+			id:"btmWords", type:"TextBox", text_id:"oneoff_0_btm",
 			x:130, y:397, width:700, height:100, align:"center"
 		});
 
-		/*// Labels
+		// Labels
 		self.add({
 			id:"labelYou", type:"TextBox",
 			x:211, y:201, width:50, height:50,
@@ -32,7 +32,7 @@ SLIDES.push({
 			x:702, y:189, width:50, height:50,
 			align:"center", color:"#aaa", size:17,
 			text_id:"label_them"
-		});*/
+		});
 
 		// Buttons
 		self.add({
@@ -69,9 +69,9 @@ SLIDES.push({
 		var t = o.topWords;
 		var b = o.btmWords;
 		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_1_cooperated")+"<br>"+Words.get("outro_2"));
+			t.setText(Words.get("oneoff_1_cooperated")+"<br>"+Words.get("oneoff_1_top"));
 		}else{
-			t.setText(Words.get("oneoff_1_cheated")+"<br>"+Words.get("outro_3"));
+			t.setText(Words.get("oneoff_1_cheated")+"<br>"+Words.get("oneoff_1_top"));
 		}
 		b.setTextID("oneoff_1_btm");
 
@@ -93,17 +93,17 @@ SLIDES.push({
 		var o = self.objects;
 
 		// Payoff
-		//o.iterated.oneoffHighlight2(_.answer);
+		o.iterated.oneoffHighlight2(_.answer);
 
 		// Text
 		var t = o.topWords;
 		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_2_cooperated")+"<br>"+Words.get("outro_2"));
+			t.setText(Words.get("oneoff_2_cooperated")+"<br>"+Words.get("oneoff_2_top"));
 		}else{
-			t.setText(Words.get("oneoff_2_cheated")+"<br>"+Words.get("outro_3"));
+			t.setText(Words.get("oneoff_2_cheated")+"<br>"+Words.get("oneoff_2_top"));
 		}
 		self.add({
-			id:"btmWords", type:"TextBox", text_id:"outro_4",
+			id:"btmWords", type:"TextBox", text_id:"oneoff_2_btm",
 			x:130, y:392, width:700, height:100, align:"center"
 		});
 
@@ -124,7 +124,7 @@ SLIDES.push({
 	},
 
 	onend: function(self){
-		//self.objects.iterated.dehighlightPayoff();
+		self.objects.iterated.dehighlightPayoff();
 		self.remove("topWords");
 		self.remove("btmWords");
 		self.remove("btnNext");
