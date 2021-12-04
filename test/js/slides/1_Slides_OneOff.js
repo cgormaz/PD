@@ -1,135 +1,63 @@
-// THE TRUST GAME - COOPERATE, YA NO?
 SLIDES.push({
-
 	id: "oneoff",
-
 	onstart: function(self){
 
-		Tournament.resetGlobalVariables();
+		// Splash in background
+		self.add({ id:"splash", type:"Splash", blush:true });
 
-		// Iterated Simulation
-		self.add({id:"iterated", type:"Iterated", x:130, y:133});
-
-		// Words on top & bottom
+		// Circular Wordbox
 		self.add({
-			id:"topWords", type:"TextBox", text_id:"oneoff_0_top",
-			x:130, y:10, width:700, height:100, align:"center"
-		});
-		self.add({
-			id:"btmWords", type:"TextBox", text_id:"oneoff_0_btm",
-			x:130, y:397, width:700, height:100, align:"center"
+			id:"text", type:"TextBox",
+			x:160, y:-250, width:640, height:500, align:"center",
+			text_id:"outro_1"
 		});
 
-		// Labels
+		// Button
 		self.add({
-			id:"labelYou", type:"TextBox",
-			x:211, y:201, width:50, height:50,
-			align:"center", color:"#aaa", size:17,
-			text_id:"label_you"
-		});
-		self.add({
-			id:"labelThem", type:"TextBox",
-			x:702, y:189, width:50, height:50,
-			align:"center", color:"#aaa", size:17,
-			text_id:"label_them"
-		});
-
-		// Buttons
-		self.add({
-			id:"btnCheat", type:"Button", x:275, y:463, text_id:"label_cheat", uppercase:true,
-			onclick:function(){
-				_.answer = "CHEAT";
-				publish("slideshow/next");
-			}
-		});
-		self.add({
-			id:"btnCooperate", type:"Button", x:495, y:460, text_id:"label_cooperate", uppercase:true,
-			onclick:function(){
-				_.answer = "COOPERATE";
-				publish("slideshow/next");
-			}
-		});
-
-	},
-	onend: function(self){
-		//self.remove("labelYou");
-		//self.remove("labelThem");
-	}
-
-},{
-
-	onstart: function(self){
-
-		var o = self.objects;
-
-		// Payoff
-		o.iterated.oneoffHighlight1(_.answer);
-
-		// Text
-		var t = o.topWords;
-		var b = o.btmWords;
-		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_1_cooperated")+"<br>"+Words.get("oneoff_1_top"));
-		}else{
-			t.setText(Words.get("oneoff_1_cheated")+"<br>"+Words.get("oneoff_1_top"));
-		}
-		b.setTextID("oneoff_1_btm");
-
-		// Hide & fade
-		_hide(o.topWords); _fadeIn(o.topWords, 150+10);
-		_hide(o.btmWords); _fadeIn(o.btmWords, 150+600);
-		_hide(o.btnCheat); _fadeIn(o.btnCheat, 150+1200);
-		_hide(o.btnCooperate); _fadeIn(o.btnCooperate, 150+1200);
-
-	},
-	onend: function(self){
-		self.remove("btmWords");
-	}
-
-},{
-
-	onstart: function(self){
-
-		var o = self.objects;
-
-		// Payoff
-		o.iterated.oneoffHighlight2(_.answer);
-
-		// Text
-		var t = o.topWords;
-		if(_.answer=="COOPERATE"){
-			t.setText(Words.get("oneoff_2_cooperated")+"<br>"+Words.get("oneoff_2_top"));
-		}else{
-			t.setText(Words.get("oneoff_2_cheated")+"<br>"+Words.get("oneoff_2_top"));
-		}
-		self.add({
-			id:"btmWords", type:"TextBox", text_id:"oneoff_2_btm",
-			x:130, y:392, width:700, height:100, align:"center"
-		});
-
-		// Replace button
-		self.remove("btnCheat");
-		self.remove("btnCooperate");
-		self.add({
-			id:"btnNext", type:"Button", x:304, y:481, size:"long",
-			text_id:"oneoff_button_next", 
+			id:"button", type:"Button", x:270, y:440, 
+			text_id:"outro_1_btn", size:"long",
 			message:"slideshow/next"
 		});
 
-		// Hide & fade
-		_hide(o.topWords); _fadeIn(o.topWords, 150+10);
-		_hide(o.btmWords); _fadeIn(o.btmWords, 150+600);
-		_hide(o.btnNext); _fadeIn(o.btnNext, 150+1200);
-
 	},
-
 	onend: function(self){
-		self.objects.iterated.dehighlightPayoff();
-		self.remove("topWords");
-		self.remove("btmWords");
-		self.remove("btnNext");
-		_.clear();
+		self.remove("text");
+		self.remove("button");
 	}
-
 });
 
+SLIDES.push({
+	onstart: function(self){
+
+		var o = self.objects;
+
+		// Text
+		self.add({
+			id:"text", type:"TextBox",
+			x:160, y:-250, width:640, height:500, align:"center",
+			text_id:"outro_2"
+		});
+		_hide(o.text); _fadeIn(o.text, 100);
+
+
+		// Button
+		self.add({
+			id:"button", type:"Button", x:270, y:390, 
+			text_id:"outro_2_btn", size:"long",
+			message:"slideshow/scratch"
+		});
+		_hide(o.button); _fadeIn(o.button, 300);
+		
+		// Button2
+		self.add({
+			id:"button2", type:"Button", x:270, y:480, 
+			text_id:"outro_2_btn2", size:"long",
+			message:"slideshow/scratch"
+		});
+		_hide(o.button2); _fadeIn(o.button2, 500);
+
+	},
+	onend: function(self){
+		self.clear();
+	}
+});
