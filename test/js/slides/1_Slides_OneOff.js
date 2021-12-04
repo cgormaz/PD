@@ -8,7 +8,7 @@ SLIDES.push({
 		Tournament.resetGlobalVariables();
 
 		// Iterated Simulation
-		self.add({id:"iterated", type:"Iterated", x:130, y:133});
+		//self.add({id:"iterated", type:"Iterated", x:130, y:133});
 
 		// Words on top & bottom
 		self.add({
@@ -93,7 +93,7 @@ SLIDES.push({
 		var o = self.objects;
 
 		// Payoff
-		o.iterated.oneoffHighlight2(_.answer);
+		//o.iterated.oneoffHighlight2(_.answer);
 
 		// Text
 		var t = o.topWords;
@@ -124,7 +124,7 @@ SLIDES.push({
 	},
 
 	onend: function(self){
-		self.objects.iterated.dehighlightPayoff();
+		//self.objects.iterated.dehighlightPayoff();
 		self.remove("topWords");
 		self.remove("btmWords");
 		self.remove("btnNext");
